@@ -1,0 +1,8 @@
+prodYear <- c(2015, 2016, 2017, 2018, 2019)
+maxLength <- c(5, 8, 15, 12, 15)
+# cars <- data.data.frame(prodYear,maxLength)
+# opar <- par(no.no.readonly = TRUE)
+# par(lty = 2, pch = 17, lwd = 2)
+plot(prodYear, maxLength, type = "b", lty = 3, lwd = 3, pch = 15, cex = 2, main = "Clinical Trials for Drug A", sub = "This is hypothetical data", xlab = "Dosage", ylab = "Drug Response")
+abline(h = maxLength, v = prodYear)
+# par(opar)
