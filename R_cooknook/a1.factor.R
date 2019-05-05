@@ -1,0 +1,7 @@
+patientId <- c(1,2,3,4)
+age <- c(25,26,52,34)
+dm <- c("tp1","tp2","tp2","tp1")
+dm <- factor(dm)
+status <- c("poor","improved","improved","poor")
+patientData <- data.frame(patientId,age,dm,status)
+str(patientData)
