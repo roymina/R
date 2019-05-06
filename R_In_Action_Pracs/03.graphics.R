@@ -23,7 +23,14 @@ drugB <- c(15, 18, 25, 31, 40)
 
 plot(dose, drugA, type="b")
 
-opar <- par(no.readonly = T,col="red")
-par(lty=3,pch=23,lwd=3)
+opar <- par(no.readonly = T)
+par(font.lab=3, cex.lab=2, font.main=4, cex.main=6)
 plot(dose, drugA, type="b")
 par(opar)
+
+#use RColorBrewer
+library(RColorBrewer)
+opar <- par(no.readonly = T) 
+mycolors <- brewer.pal(n, "Set1")
+barplot(c(1:10), col=mycolors)
+ 
