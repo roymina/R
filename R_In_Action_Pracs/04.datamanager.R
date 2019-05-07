@@ -22,8 +22,10 @@ q2 <- c(4,5,5,3,2)
 q3 <- c(5,2,5,4,1)
 q4 <- c(5,5,5,NA,2)
 q5 <- c(5,5,2,NA,1)
-
 leadership <- data.frame(manager,date,country,gender,age,q1,q2,q3,q4,q5,stringsAsFactors = F)
+
+
+
 # 语句 variable[condition] <- expression 将仅在 condition 的值为 TRUE 时执行赋值
 leadership$age[leadership$age == 99] <-NA
 attach(leadership)
